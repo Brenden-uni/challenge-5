@@ -6,11 +6,11 @@ Challenge 5 of coding bootcamp. Using jquery to create an interactive Day Schedu
 
 ## Webpage Address
 
-https://brenden-uni.github.io/PasswordGenerator/
+https://brenden-uni.github.io/challenge-5/
 
 ## Screenshot
 
-![Alt text](.\Assets\passwordGenerator.PNG?raw=true "Screenshot of Webpage")
+![Alt text](Assets/work-day-scheduler.PNG "Schedule Page")
 
 ## Installation
 

@@ -1,14 +1,11 @@
-
 $(function () {
   // Add listener for click events on the save button
-  $('.save-button').click(function () {
+  $('.saveBtn').click(function () {
     var timeBlockId = $(this).closest('.time-block').attr('id');
     var userInput = $(this).siblings('.description').val();
-    console.log('Saving:', timeBlockId, userInput);
-    localStorage.setItem(timeBlockId, userInput);
-    console.log ('clicked');
+    var key = timeBlockId.replace('hour-', ''); // Remove the "hour-" prefix
+    localStorage.setItem(key, userInput);
   });
-
 
   // Apply past, present, or future class to each time block
   var currentHour = dayjs().format('H');
@@ -27,7 +24,8 @@ $(function () {
   // Get user input from local storage and set textarea values
   $('.time-block').each(function () {
     var timeBlockId = $(this).attr('id');
-    var savedInput = localStorage.getItem(timeBlockId);
+    var key = timeBlockId.replace('hour-', ''); // Remove the "hour-" prefix
+    var savedInput = localStorage.getItem(key);
 
     if (savedInput) {
       $(this).find('.description').val(savedInput);
