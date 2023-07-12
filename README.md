@@ -2,7 +2,7 @@
 
 ## Description
 
-Challenge 3 of coding bootcamp. An app that generates a password, using prompts and choices given by the user.
+Challenge 5 of coding bootcamp. Using jquery to create an interactive Day Scheduler and Day.js library to display the date.
 
 ## Webpage Address
 
